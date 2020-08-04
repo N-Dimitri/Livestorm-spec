@@ -12,9 +12,6 @@ When /^I fill in "([^"]*)" with "([^"]*)"$/ do |field, string|
     fill_in(field, with: string) 
 end
 
-When /^I click "([^"]*)"$/ do |input|
-    click_button(input) 
-end
 
 Then /^I should see "([^"]*)"$/ do |text|
     within('div.base-form-error') do
@@ -26,4 +23,8 @@ Then /^I should see in form error "([^"]*)"$/ do |text|
     within('div.form-error-message') do
         expect(page).to have_content(text)
     end
+end
+
+Then /^I am to the login page$/ do
+    expect(page).to have_css("div.sign-in")
 end

@@ -20,7 +20,7 @@ Dotenv.load
     Capybara::Selenium::Driver.new(app, browser: :chrome, options: opts, desired_capabilities: caps)
   end
 
-  #Switch between :chrome / :headless_chrome to see tests run in chrome
+#Switch between :chrome / :headless_chrome to see tests run in chrome
   case ENV['HEADLESS']
   when 'true', 1, nil
     Capybara.default_driver = :headless_chrome
