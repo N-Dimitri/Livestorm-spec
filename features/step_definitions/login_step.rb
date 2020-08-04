@@ -19,7 +19,7 @@ Then /^I should see "([^"]*)"$/ do |text|
     end
 end
 
-Then /^I should see in form error "([^"]*)"$/ do |text|
+Then /^I should see in form validation "([^"]*)"$/ do |text|
     within('div.form-error-message') do
         expect(page).to have_content(text)
     end

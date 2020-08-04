@@ -23,4 +23,16 @@ Scenario: Enter correct email and wrong password and submit form
     When I fill in "Email*" with "neplaz.dimitri@gmail.com"
     And I fill in "Mot de passe*" with "Worldpspspea"
     And I click button "Se connecter"
-    Then I should see in form error "Mot de passe ou identifiant invalide."
+    Then I should see in form validation "Mot de passe ou identifiant invalide."
+
+Scenario: Enter unknown account and valid password
+    When I fill in "Email*" with "empty@account.fr"
+    When I fill in "Mot de passe*" with "BigPaswwordSecure"
+    And I click button "Se connecter"
+    Then I should see in form validation "Aucun compte Livestorm n'est associé à cet email : empty@account.fr"
+
+Scenario: Enter Password Special Characters
+    When I fill in "Email*" with "neplaz.dimitri@gmail.com"
+    When I fill in "Mot de passe*" with "!~~^^$$$$****///\\\^^\^"
+    And I click button "Se connecter"
+    Then I should see in form validation "Mot de passe ou identifiant invalide."

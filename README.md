@@ -44,7 +44,7 @@ bundle exec cucumber
 Run test with specific tags
 
 ```bash
-bundle exec cucumber --tags @signIn
+bundle exec cucumber --tags "@signIn"
 ```
 
 Done !
