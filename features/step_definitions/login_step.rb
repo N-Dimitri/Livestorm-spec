@@ -1,8 +1,10 @@
+require 'dotenv'
+Dotenv.load
 ## Describe step for login page
 
 When /^I fill my email and password$/ do
-    fill_in("Email*", with: "testing@email.com") 
-    fill_in("Mot de passe*", with: "testingpassword")
+    fill_in("Email*", with: ENV['EMAIL']) 
+    fill_in("Mot de passe*", with: ENV['PASSWORD'])
 end
 
 When /^I fill in "([^"]*)" with "([^"]*)"$/ do |field, string|
