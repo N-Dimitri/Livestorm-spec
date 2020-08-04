@@ -1,4 +1,4 @@
-# describe step for global usage
+# describe step for common usage
 
 Given /I visit "([^"]*)"$/ do |url|
     visit(url)

@@ -1,3 +1,5 @@
+[![<ORG_NAME>](https://circleci.com/gh/N-Dimitri/Livestorm-spec.svg?style=svg)](https://app.circleci.com/pipelines/github/N-Dimitri/Livestorm-spec)
+
 # Livestorm Capybara/cucumber testing
 
 Simple repo to test Livestorm SignIn/SignOut process
