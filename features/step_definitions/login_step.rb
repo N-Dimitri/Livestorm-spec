@@ -1,5 +1,6 @@
 require 'dotenv'
 Dotenv.load
+
 ## Describe step for login page
 
 When /^I fill my email and password$/ do

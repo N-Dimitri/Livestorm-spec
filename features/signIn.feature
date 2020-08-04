@@ -6,6 +6,7 @@ Background:
  Scenario: Connect to my account in LiveStorm Dashboard
     When I fill my email and password
     And I click "Se connecter"
+    Then I am connected to the dashboard
 
 Scenario: Enter Invalid email and submit form
     When I fill in "Email*" with "ddds"
