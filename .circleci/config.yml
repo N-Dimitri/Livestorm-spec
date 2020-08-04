@@ -5,7 +5,7 @@ jobs:
     working_directory: ~/livestorm
     docker:
       # this is important to use proper image with browsers support
-      - image: circleci/ruby:2.4.2-node-browsers
+      - image: circleci/ruby:2.5.1-node-browsers
 
     steps:
       - checkout
@@ -24,9 +24,6 @@ jobs:
         key: livestorm-{ { checksum "Gemfile.lock" }}
         paths:
           - vendor/bundle
-
-      # Prepare .env, useful if you use dotenv gem
-      # - run: cp .env.example .env
 
       # Run cucumber
       - type: shell
