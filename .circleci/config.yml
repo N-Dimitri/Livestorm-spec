@@ -13,6 +13,6 @@ jobs:
           name: Which bundler?
           command: bundle -v
       - ruby/bundle-install
-      - run:
+      - type: shell
           name: Run all tests e2e
           command: cucumber
