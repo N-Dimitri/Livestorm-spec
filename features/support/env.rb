@@ -29,3 +29,5 @@ Dotenv.load
   else
     Capybara.default_driver = :chrome
   end
+
+  Capybara.default_max_wait_time=60
