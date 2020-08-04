@@ -1,6 +1,6 @@
 ## Describe step for login page
 
-When /^I fill my email and password"$/ do |field, string|
+When /^I fill my email and password$/ do
     fill_in("Email*", with: "testing@email.com") 
     fill_in("Mot de passe*", with: "testingpassword")
 end
