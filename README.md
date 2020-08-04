@@ -1,4 +1,4 @@
-[![<N-Dimitri>](https://circleci.com/gh/N-Dimitri/Livestorm-spec.svg?style=svg)](https://app.circleci.com/pipelines/github/N-Dimitri/Livestorm-spec)
+[![CircleCI](https://circleci.com/gh/N-Dimitri/Livestorm-spec.svg?style=svg&circle-token=42cb2bf76040f64fbeb2cf4904240ce4b4d3f3a3)](https://circleci.com/gh/N-Dimitri/Livestorm-spec)
 
 # Livestorm Capybara/cucumber testing
 
