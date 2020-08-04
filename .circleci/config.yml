@@ -31,8 +31,11 @@ jobs:
       # Run cucumber
       - type: shell
         command: |
-          cucumber
+          mkdir -p ~/report
+          bundle exec cucumber --format junit --out ~/report/junit.xml
+        when: always
 
-      # Save artifacts
-      # - type: store_test_results
-      #  path: /tmp/test-results
+      - store_test_results:
+          path: ~/report
+      - store_artifacts:
+          path: ~/report
