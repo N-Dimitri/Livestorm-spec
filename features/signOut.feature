@@ -11,3 +11,8 @@ Background:
     When I open my account menu
     And I click "Déconnexion"
     Then I am to the login page
+
+Scenario: Test logout route
+    Given I visit "https://app.livestorm.co/#/logout"
+    Then I am to the login page
+
